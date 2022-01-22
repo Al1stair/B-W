@@ -277,8 +277,8 @@ body {
 }
 
 .map-container-element img{
-    max-width: 800px;
-    flex-basis: 70%;
+    max-height: 700px;
+    width: 100%;
 }
 
 /* MAP-SECTION */
