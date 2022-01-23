@@ -36,17 +36,19 @@ header {
 
 .header-container-element {
     line-height: 41px;
-    padding-right: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
     font-weight: 600;
     font-size: 13px;
     color: #fff;
+    cursor: pointer;
 
-    transition: color .25s linear;
+    transition: all .5s;
 }
 
 .header-container-element:hover {
-    cursor: pointer;
-    color: #D3D3D3;
+    color: black;
+    background-color: #f6f7f7;
 }
 
 /* HEADER */
@@ -159,16 +161,44 @@ header {
     padding-top: 16px;
     padding-bottom: 16px;
     cursor: pointer;
-    transition: color .3s linear;
+    transition: all .5s;
     font-size: 15px;
 }
-
 .info-container-element:hover {
-    color: #D3D3D3;
+    background-color: #f6f7f7;
+    color: black;
 }
 
 .info-container-element:last-child {
     border: none;
+}
+
+.info-container-element ul{
+    list-style-type: none;
+    background-color: #f6f7f7;
+    color: black;
+    display: none;
+    position: absolute;
+    min-width: 222px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.info-container-element:hover ul{
+    display: block;
+}
+
+.info-container-element li{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: all .5s;
+}
+
+.info-container-element li:hover {
+    background-color: rgb(203, 221, 241)
 }
 
 /* INFO-SECTION */
@@ -340,7 +370,7 @@ header {
     padding-bottom: 6px;
 }
 
-.footer-subtitle button{
+.footer-subtitle .button{
     padding: 10px 5.2vh;
     background-color: #f6f7f7;
     border: solid 2px rgba(0, 0, 0, .5);
@@ -349,11 +379,42 @@ header {
     transition: background-color .3s linear;
 }
 
-.footer-subtitle button:hover{
+.footer-subtitle .button:hover{
     border-radius: 3px;
     border-color: #fff;
     background-color: #212529;
     color: #fff;
+}
+
+.footer-subtitle .button ul{
+    list-style-type: none;
+    background-color: #f6f7f7;
+    color: black;
+    display: none;
+    position: absolute;
+    min-width: 5.2vh;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-left: -5.2vh;
+}
+
+.footer-subtitle .button:hover ul{
+    display: block;
+}
+
+.footer-subtitle .button li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5.2vh;
+    padding-left: 5.2vh;
+    transition: all .5s;
+}
+
+.footer-subtitle .button li:hover {
+    background-color: rgb(203, 221, 241)
 }
 
 .footer-title {
@@ -390,6 +451,7 @@ header {
     color: #212529;
     line-height: 1.4;
     font-weight: 400;
+    padding-left: 4px;
 }
 
 .footer-info-link {
